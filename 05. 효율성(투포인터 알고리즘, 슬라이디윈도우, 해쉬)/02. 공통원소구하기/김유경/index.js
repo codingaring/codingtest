@@ -1,7 +1,11 @@
 function solution(arr1, arr2) {
   let answer = [];
+  arr1.filter((n)=> {
+    if(arr2.includes(n))
+      answer.push(n)
+    })
 
-  return answer;
+  return answer.sort((a,b)=> a - b)
 }
 
 let a = [1, 3, 9, 5, 2];
